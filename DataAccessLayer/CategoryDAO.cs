@@ -29,6 +29,7 @@ namespace DataAccessLayer
             {
                 using MyStockDBContext stock = new MyStockDBContext();
                 stock.Categories.Add(category);
+                stock.SaveChanges();
             }
             catch (Exception ex)
             {

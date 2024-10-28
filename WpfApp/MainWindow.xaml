@@ -7,6 +7,21 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
+        <Label Content="Product ID&#xD;&#xA;" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+        <Label Content="Product Name" HorizontalAlignment="Left" Margin="10,41,0,0" VerticalAlignment="Top"/>
+        <Label Content="Price" HorizontalAlignment="Left" Margin="10,72,0,0" VerticalAlignment="Top"/>
+        <Label Content="Units In Stock " HorizontalAlignment="Left" Margin="10,103,0,0" VerticalAlignment="Top"/>
+        <Label Content="Category" HorizontalAlignment="Left" Margin="10,131,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtProductId" HorizontalAlignment="Left" Height="23" Margin="125,19,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="665"/>
+        <TextBox x:Name="txtPrice" HorizontalAlignment="Left" Height="23" Margin="125,75,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="665"/>
+        <TextBox x:Name="txtProductName" HorizontalAlignment="Left" Height="23" Margin="125,47,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="665"/>
+        <TextBox x:Name="txtUnits" HorizontalAlignment="Left" Height="23" Margin="125,103,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="665"/>
+        <DataGrid x:Name="dgData" HorizontalAlignment="Left" Height="182" Margin="125,167,0,0" VerticalAlignment="Top" Width="665" d:ItemsSource="{d:SampleData ItemCount=5}" SelectionChanged="DataGrid_SelectionChanged"/>
+        <ComboBox x:Name="cbxCategory" HorizontalAlignment="Left" Height="26" Margin="125,131,0,0" VerticalAlignment="Top" Width="665"/>
+        <Button x:Name="btnCreate" Content="Create" HorizontalAlignment="Left" Height="38" Margin="125,378,0,0" VerticalAlignment="Top" Width="118" Click="btnCreate_Click"/>
+        <Button x:Name="btnUpdate" Content="Update" HorizontalAlignment="Left" Height="38" Margin="310,378,0,0" VerticalAlignment="Top" Width="118" Click="btnUpdate_Click"/>
+        <Button x:Name="btnDelete" Content="Delete" HorizontalAlignment="Left" Height="38" Margin="487,378,0,0" VerticalAlignment="Top" Width="118" Click="btnDelete_Click"/>
+        <Button x:Name="btnClose" Content="Close" HorizontalAlignment="Left" Height="38" Margin="672,378,0,0" VerticalAlignment="Top" Width="118" Click="btnClose_Click"/>
 
     </Grid>
 </Window>
